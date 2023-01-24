@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- nav bar -->
+    <div class="nav-container">
+        <div class="nav-items">
+            <p class="logo"><span class="logo-m">M</span>ahrous</p>
+            <ul class="nav-list">
+                <li>
+                    <a href="#HomeTitle">Home</a>
+                </li>
+                <li>
+                    <a class="HH" href="#aboutTitle">About</a>
+                </li>
+                <li>
+                    <a href="#ServicesTitle">Services</a>
+                </li>
+                <li>
+                    <a href="#PortfolioTitle">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contactTitle">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--header-->
+    <div class="header-info">
+        <h1>Hi ! <br> My Name is <SPAN class="name">Mohamed Ashraf</SPAN></h1>
+        <p>I'm a <span class="text-change"></span></p>
+    </div>
+    <!--about me-->
+    <div class="about-container" id="aboutTitle" >
+        <div class="about-items">
+            <div class="about-img">
+                <img class="ana-img" src="/imges/ana.jpg" alt="">
+            </div>
+            <div class="about-content">
+                <h1 class="about-title">About me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores adipisci nobis totam sequi quo necessitatibus id ad accusamus fuga. Repellendus quo cum nesciunt atque nam odio aspernatur quod expedita temporibus! </p>
+                <div class="about-info ">
+                    <p class="title-links titlef-link active-info" onclick="openinfo('skills')">Skills</p>
+                    <p class="title-links"onclick="openinfo('experience')">Experience</p>
+                    <p class="title-links"onclick="openinfo('education')">Education</p>
+                </div>
+
+                <div class="links-content active-content" id="skills">
+                    <ul>
+                        <li class="SKILL1  "><span>HTML/CSS</span><br>95%</li>
+                        <br><br>
+                        <li class="SKILL2" ><span>JAVASCRIPT</span><br>90%</li>
+                        <br><br>
+                        <li class="SKILL3"><span>ENGLISH</span><br>95%</li>
+                        <br><br>
+                        <li class="SKILL4"><span>REACT</span><br>80%</li>
+                    </ul>
+                </div>
+
+                <div class="links-content" id="experience">
+                    <ul>
+                        <li  class="title-none"><span>WEBSITES</span>
+                            <br><br>
+                        <li class="SKILLe">Eshfeney Medical Website</li>
+                            <br><br>
+                        <li class="SKILLe">Starbucks Website</li>
+                    </ul>
+                </div>
+
+                <div class="links-content" id="education">
+                    <ul>
+                        <li class="SKILL"><span>high school</span><br>El Sadat Language School </li>
+                        <br><br>
+                        <li class="SKILL" ><span>Universty</span><br>Suez Canal Universty</li>
+                        <br><br>
+                        <li class="SKILL"><span>Faculty</span><br>Computer Science</li>
+                        <br><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact me-->
+    <div id = "contact" class="contact-class" id="#contactTitle">
+        <div class="contact-container">
+            <div class="contact-sec">
+                <div class="contact-left">
+                    <div class="contact-text">
+                        <h1 class="contact-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mohamed.ashraf.elorkh@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>01211002488</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100008356717784" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/MohamedAshrafKamal/?fbclid=IwAR3ZzBM2HKmh_UVcHtoaZV8EzsHCg8C6o9wDM98LBupRajNCRg2Z43N-iRc" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/mohamed_ashraf282/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form id="form" >
+                        <div class="input-control">
+                            <input   id="Name" type="text" name="Name" placeholder="Your Name" >
+                            <div class="error"></div>
+                        </div >
+
+                        <div class="input-control">
+                        <input id="email" type="text"name="email" placeholder="Your Email" >
+                        <div class="error"></div>
+                        </div>
+
+                        <div class="input-control">
+                            <textarea id="text-area" name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <div class="error"></div>
+                        </div>
+                        <button onclick="opensub()" class="btn" type="submit">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="/js/textChange.js"></script>
+    <script src="/js/scroll.js"></script>
+    <script src="/js/info.js"></script>
+    <script src="/js/formval.js"></script>
+   
+    
+    
+</body>
+</html>
